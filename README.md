@@ -2,17 +2,9 @@
     <img src="https://www.shipwright.sh/banner.png" alt="Shipwright" />
 </a>
 
-# `@shipwright-sh/component`
+# Input OTP
 
-A template for creating new Shipwright components.
-
-# Package Name
-
-TODO: Description
-
-## React
-
-TODO: React Usage
+Framework ports of the [Input OTP](https://github.com/guilhermerodz/input-otp) library by [@guilhermerodz](https://github.com/guilhermerodz).
 
 ## Preact
 
