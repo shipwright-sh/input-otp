@@ -6,7 +6,7 @@
 	"repository": "https://github.com/shipwright-sh/component",
 	"author": "Shipwright",
 	"license": "MIT",
-	"version": "1.0.0",
+	"version": "0.1.0",
 	"type": "module",
 	"scripts": {
 		"dev": "tsdown --watch src",
