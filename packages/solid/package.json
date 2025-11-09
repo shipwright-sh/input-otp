@@ -1,10 +1,16 @@
 {
-	"name": "@shipwright-sh/package-solid",
+	"name": "@shipwright-sh/input-otp-solid",
 	"version": "1.0.0",
-	"description": "",
-	"keywords": [],
+	"description": "Solid port of the Input OTP component",
+	"keywords": [
+		"solid",
+		"input",
+		"otp",
+		"mfa",
+		"component"
+	],
 	"website": "https://www.shipwright.sh",
-	"repository": "https://github.com/shipwright-sh/component",
+	"repository": "https://github.com/shipwright-sh/input-otp",
 	"author": "Shipwright",
 	"license": "MIT",
 	"type": "module",

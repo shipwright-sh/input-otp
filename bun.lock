@@ -34,10 +34,12 @@
     "examples/solid": {
       "name": "solid-example",
       "dependencies": {
-        "@shipwright-sh/package-solid": "workspace:*",
+        "@shipwright-sh/input-otp-solid": "workspace:*",
         "solid-js": "^1.9.10",
       },
       "devDependencies": {
+        "@tailwindcss/vite": "^4.1.17",
+        "tailwindcss": "^4.1.17",
         "typescript": "^5.9.3",
         "vite": "^7.2.2",
         "vite-plugin-solid": "^2.11.10",
@@ -63,7 +65,7 @@
       },
     },
     "packages/solid": {
-      "name": "@shipwright-sh/package-solid",
+      "name": "@shipwright-sh/input-otp-solid",
       "version": "1.0.0",
       "devDependencies": {
         "@shipwright-sh/package-core": "workspace:*",
@@ -329,9 +331,9 @@
 
     "@rollup/rollup-win32-x64-msvc": ["@rollup/rollup-win32-x64-msvc@4.53.1", "", { "os": "win32", "cpu": "x64" }, "sha512-rLarc1Ofcs3DHtgSzFO31pZsCh8g05R2azN1q3fF+H423Co87My0R+tazOEvYVKXSLh8C4LerMK41/K7wlklcg=="],
 
-    "@shipwright-sh/package-core": ["@shipwright-sh/package-core@workspace:packages/core"],
+    "@shipwright-sh/input-otp-solid": ["@shipwright-sh/input-otp-solid@workspace:packages/solid"],
 
-    "@shipwright-sh/package-solid": ["@shipwright-sh/package-solid@workspace:packages/solid"],
+    "@shipwright-sh/package-core": ["@shipwright-sh/package-core@workspace:packages/core"],
 
     "@shipwright-sh/package-vue": ["@shipwright-sh/package-vue@workspace:packages/vue"],
 

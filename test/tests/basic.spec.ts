@@ -1,6 +1,6 @@
 import { expect, test } from "@playwright/test";
 
-[3000].forEach(async (port) => {
+[3000, 3002].forEach(async (port) => {
 	test(`(${port}) expect basic typing to work`, async ({ page }) => {
 		await page.goto(`http://localhost:${port}`);
 

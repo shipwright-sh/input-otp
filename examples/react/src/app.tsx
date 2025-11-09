@@ -1,4 +1,4 @@
-import { OTPInput, type SlotProps } from "input-otp";
+import { OTPInput } from "input-otp";
 
 function cn(...classes: string[]) {
 	return classes.filter(Boolean).join(" ");

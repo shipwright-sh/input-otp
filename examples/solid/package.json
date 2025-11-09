@@ -15,7 +15,7 @@
 		"@tailwindcss/vite": "^4.1.17"
 	},
 	"dependencies": {
-		"@shipwright-sh/package-solid": "workspace:*",
+		"@shipwright-sh/input-otp-solid": "workspace:*",
 		"solid-js": "^1.9.10"
 	}
 }
