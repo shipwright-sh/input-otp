@@ -1,0 +1,32 @@
+{
+	"name": "@shipwright-sh/package-solid",
+	"version": "1.0.0",
+	"description": "",
+	"keywords": [],
+	"website": "https://www.shipwright.sh",
+	"repository": "https://github.com/shipwright-sh/component",
+	"author": "Shipwright",
+	"license": "MIT",
+	"type": "module",
+	"scripts": {
+		"dev": "tsdown --watch src",
+		"build": "tsdown",
+		"tc": "tsc --noEmit"
+	},
+	"peerDependencies": {
+		"solid-js": "^1.9.10"
+	},
+	"devDependencies": {
+		"@shipwright-sh/package-core": "workspace:*",
+		"rolldown-plugin-solid": "^0.2.1",
+		"solid-js": "^1.9.10",
+		"tsdown": "^0.16.1",
+		"typescript": "^5.9.3"
+	},
+	"exports": {
+		".": {
+			"import": "./dist/index.js",
+			"types": "./dist/index.d.ts"
+		}
+	}
+}

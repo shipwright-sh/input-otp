@@ -1,0 +1,28 @@
+{
+	"name": "@shipwright-sh/component",
+	"type": "module",
+	"private": true,
+	"scripts": {
+		"dev": "turbo dev",
+		"build": "turbo build",
+		"tc": "turbo tc",
+		"test": "turbo test"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.3.4",
+		"@types/bun": "latest",
+		"@vitejs/plugin-react": "^5.1.0",
+		"bumpp": "^10.3.1",
+		"lefthook": "^2.0.2",
+		"turbo": "^2.6.0"
+	},
+	"peerDependencies": {
+		"typescript": "^5"
+	},
+	"packageManager": "bun@1.2.21",
+	"workspaces": [
+		"examples/*",
+		"packages/*",
+		"test"
+	]
+}

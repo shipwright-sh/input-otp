@@ -1,0 +1,24 @@
+name: Check
+on: [push]
+jobs:
+    check:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+            - uses: oven-sh/setup-bun@v2
+            - name: 🪴 Install dependencies
+              run: bun install --frozen-lockfile
+            - name: 😎 Check
+              run: bun biome ci
+            - name: 🔨 Build
+              run: bun run build
+            - name: 🔍 Check types
+              run: bun tc
+            - name: 🏎️ Install Playwright
+              run: bunx playwright install --with-deps
+            - name: 🚀 Start development servers
+              run: bun dev &
+            - name: ⏳ Wait for server
+              run: npx wait-on http://localhost:3000 --timeout 30000
+            - name: 🧪 Run tests
+              run: bun run test
