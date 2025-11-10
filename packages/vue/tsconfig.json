@@ -1,7 +1,7 @@
 {
 	"compilerOptions": {
 		"target": "esnext",
-		"lib": ["es2023"],
+		"lib": ["es2023", "DOM"],
 		"moduleDetection": "force",
 		"module": "preserve",
 		"moduleResolution": "bundler",
@@ -14,7 +14,11 @@
 		"esModuleInterop": true,
 		"isolatedModules": true,
 		"verbatimModuleSyntax": true,
-		"skipLibCheck": true
+		"skipLibCheck": true,
+
+		"paths": {
+			"@shipwright-sh/package-core": ["../core/src"]
+		}
 	},
 	"include": ["src"]
 }

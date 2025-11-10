@@ -5,6 +5,6 @@ export default defineConfig({
 	entry: ["./src/index.ts"],
 	platform: "browser",
 	plugins: [Vue({ isProduction: true })],
-	dts: { vue: true },
+	dts: { vue: true, resolve: ["@shipwright-sh/package-core"] },
 	external: ["vue"],
 });
