@@ -7,7 +7,5 @@ export default defineConfig({
 	external: ["solid-js"],
 	dts: {
 		resolve: ["@shipwright-sh/package-core"],
-		// build: true,
-		// resolver: "tsc",
 	},
 });
