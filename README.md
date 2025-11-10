@@ -9,3 +9,4 @@ Framework ports of the [Input OTP](https://github.com/guilhermerodz/input-otp) l
 ## Frameworks
 
 - [Solid](packages/solid)
+- [Vue](packages/vue)

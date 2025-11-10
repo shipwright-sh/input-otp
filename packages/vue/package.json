@@ -1,7 +1,13 @@
 {
-	"name": "@shipwright-sh/package-vue",
-	"description": "",
-	"keywords": [],
+	"name": "@shipwright-sh/input-otp-vue",
+	"description": "Vue port of the Input OTP component",
+	"keywords": [
+		"vue",
+		"input",
+		"otp",
+		"mfa",
+		"component"
+	],
 	"website": "https://www.shipwright.sh",
 	"repository": "https://github.com/shipwright-sh/component",
 	"author": "Shipwright",
