@@ -61,12 +61,13 @@
     "packages/core": {
       "name": "@shipwright-sh/package-core",
       "devDependencies": {
+        "tsdown": "^0.16.1",
         "typescript": "^5.9.3",
       },
     },
     "packages/solid": {
       "name": "@shipwright-sh/input-otp-solid",
-      "version": "1.0.0",
+      "version": "0.1.1",
       "devDependencies": {
         "@shipwright-sh/package-core": "workspace:*",
         "rolldown-plugin-solid": "^0.2.1",
@@ -80,7 +81,7 @@
     },
     "packages/vue": {
       "name": "@shipwright-sh/package-vue",
-      "version": "1.0.0",
+      "version": "0.1.1",
       "devDependencies": {
         "@shipwright-sh/package-core": "workspace:*",
         "@vue/tsconfig": "^0.8.1",

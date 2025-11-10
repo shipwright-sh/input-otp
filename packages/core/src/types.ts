@@ -1,12 +1,12 @@
-export interface SlotProps {
+export type SlotProps = {
 	isActive: boolean;
 	char: string | null;
 	placeholderChar: string | null;
 	hasFakeCaret: boolean;
-}
+};
 
-export interface RenderProps {
+export type RenderProps = {
 	slots: SlotProps[];
 	isFocused: boolean;
 	isHovering: boolean;
-}
+};

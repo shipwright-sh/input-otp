@@ -3,18 +3,19 @@
 	"type": "module",
 	"private": true,
 	"scripts": {
-		"dev": "tsc --watch",
-		"build": "tsc",
+		"dev": "tsdown --watch src",
+		"build": "tsdown",
 		"tc": "tsc --noEmit"
 	},
 	"peerDependencies": {},
 	"devDependencies": {
+		"tsdown": "^0.16.1",
 		"typescript": "^5.9.3"
 	},
 	"exports": {
 		".": {
-			"import": "./dist/index.js",
-			"types": "./dist/index.d.ts"
+			"import": "./dist/index.mjs",
+			"types": "./dist/index.d.mts"
 		}
 	}
 }
