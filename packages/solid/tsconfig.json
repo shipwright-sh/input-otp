@@ -5,9 +5,6 @@
 		"jsxImportSource": "solid-js",
 		"module": "ESNext",
 		"moduleResolution": "bundler",
-		"paths": {
-			"~/*": ["./src/*"]
-		},
 		"types": ["node"],
 		"allowJs": true,
 		"strict": true,
@@ -15,7 +12,12 @@
 		"allowSyntheticDefaultImports": true,
 		"esModuleInterop": true,
 		"isolatedModules": true,
-		"strictNullChecks": true
+		"strictNullChecks": true,
+
+		"paths": {
+			// https://github.com/rolldown/tsdown/issues/345
+			"@shipwright-sh/package-core": ["../core/src"]
+		}
 	},
 	"include": ["src"]
 }
