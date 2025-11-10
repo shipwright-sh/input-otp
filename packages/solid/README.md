@@ -1,3 +1,7 @@
+<a href="https://www.shipwright.sh">
+    <img src="https://www.shipwright.sh/banner.png" alt="Shipwright" />
+</a>
+
 # Input OTP for SolidJS
 
 An accessible, unstyled, full-featured OTP input component for SolidJS.
