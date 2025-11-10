@@ -11,14 +11,14 @@ This is a Vue port of the original [input-otp](https://github.com/guilhermerodz/
 ## Installation
 
 ```bash
-npm install @shipwright-sh/package-vue
+npm install @shipwright-sh/input-otp-vue
 ```
 
 ## Usage
 
 ```vue
 <script setup lang="ts">
-import { OTPInput } from '@shipwright-sh/package-vue'
+import { OTPInput } from '@shipwright-sh/input-otp-vue'
 </script>
 
 <template>
@@ -42,7 +42,7 @@ The example below uses Tailwind CSS:
 
 ```vue
 <script setup lang="ts">
-import { OTPInput, type SlotProps } from '@shipwright-sh/package-vue'
+import { OTPInput, type SlotProps } from '@shipwright-sh/input-otp-vue'
 
 function cn(...classes: (string | boolean | undefined)[]) {
   return classes.filter(Boolean).join(' ')
@@ -78,7 +78,7 @@ function cn(...classes: (string | boolean | undefined)[]) {
 
 <!-- Feel free to copy. Uses @shadcn/ui tailwind colors. -->
 <script setup lang="ts">
-import type { SlotProps } from '@shipwright-sh/package-vue'
+import type { SlotProps } from '@shipwright-sh/input-otp-vue'
 
 const Slot = defineComponent({
   props: {
@@ -162,7 +162,7 @@ type OTPInputProps = {
   inputMode?: 'numeric' | 'text' | 'decimal' | 'tel' | 'search' | 'email' | 'url'
 
   // Pro tip: input-otp exports some patterns by default such as REGEXP_ONLY_DIGITS
-  // Example: import { REGEXP_ONLY_DIGITS } from '@shipwright-sh/package-vue';
+  // Example: import { REGEXP_ONLY_DIGITS } from '@shipwright-sh/input-otp-vue';
   // Then use it as: <OTPInput :pattern="REGEXP_ONLY_DIGITS" />
   pattern?: string | RegExp
 
@@ -217,7 +217,7 @@ type SlotProps = {
 ```vue
 <script setup lang="ts">
 import { ref } from 'vue'
-import { OTPInput } from '@shipwright-sh/package-vue'
+import { OTPInput } from '@shipwright-sh/input-otp-vue'
 
 const formRef = ref<HTMLFormElement>()
 const buttonRef = ref<HTMLButtonElement>()
@@ -254,7 +254,7 @@ function handleComplete() {
 
 ```vue
 <script setup lang="ts">
-import { OTPInput } from '@shipwright-sh/package-vue'
+import { OTPInput } from '@shipwright-sh/input-otp-vue'
 </script>
 
 <template>
@@ -278,7 +278,7 @@ import { OTPInput } from '@shipwright-sh/package-vue'
 ```vue
 <script setup lang="ts">
 import { ref } from 'vue'
-import { OTPInput } from '@shipwright-sh/package-vue'
+import { OTPInput } from '@shipwright-sh/input-otp-vue'
 
 const otp = ref('')
 </script>
@@ -307,7 +307,7 @@ If you want to allow pasting of "XXX-XXX" even though the input's regex/pattern 
 
 ```vue
 <script setup lang="ts">
-import { OTPInput } from '@shipwright-sh/package-vue'
+import { OTPInput } from '@shipwright-sh/input-otp-vue'
 
 function pasteTransformer(pasted: string) {
   return pasted.replaceAll('-', '')
@@ -336,7 +336,7 @@ If you prefer not to use the scoped slot pattern, you can access the OTP input c
 
 ```vue
 <script setup lang="ts">
-import { OTPInput, useOTPInput } from '@shipwright-sh/package-vue'
+import { OTPInput, useOTPInput } from '@shipwright-sh/input-otp-vue'
 </script>
 
 <template>
@@ -347,7 +347,7 @@ import { OTPInput, useOTPInput } from '@shipwright-sh/package-vue'
 
 <!-- CustomSlots.vue -->
 <script setup lang="ts">
-import { useOTPInput } from '@shipwright-sh/package-vue'
+import { useOTPInput } from '@shipwright-sh/input-otp-vue'
 
 const context = useOTPInput()
 </script>

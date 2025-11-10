@@ -48,7 +48,7 @@
     "examples/vue": {
       "name": "vue-example",
       "dependencies": {
-        "@shipwright-sh/package-vue": "workspace:*",
+        "@shipwright-sh/input-otp-vue": "workspace:*",
         "vue": "^3.5.24",
       },
       "devDependencies": {
@@ -82,7 +82,7 @@
       },
     },
     "packages/vue": {
-      "name": "@shipwright-sh/package-vue",
+      "name": "@shipwright-sh/input-otp-vue",
       "version": "0.1.2",
       "devDependencies": {
         "@shipwright-sh/package-core": "workspace:*",
@@ -336,9 +336,9 @@
 
     "@shipwright-sh/input-otp-solid": ["@shipwright-sh/input-otp-solid@workspace:packages/solid"],
 
-    "@shipwright-sh/package-core": ["@shipwright-sh/package-core@workspace:packages/core"],
+    "@shipwright-sh/input-otp-vue": ["@shipwright-sh/input-otp-vue@workspace:packages/vue"],
 
-    "@shipwright-sh/package-vue": ["@shipwright-sh/package-vue@workspace:packages/vue"],
+    "@shipwright-sh/package-core": ["@shipwright-sh/package-core@workspace:packages/core"],
 
     "@tailwindcss/node": ["@tailwindcss/node@4.1.17", "", { "dependencies": { "@jridgewell/remapping": "^2.3.4", "enhanced-resolve": "^5.18.3", "jiti": "^2.6.1", "lightningcss": "1.30.2", "magic-string": "^0.30.21", "source-map-js": "^1.2.1", "tailwindcss": "4.1.17" } }, "sha512-csIkHIgLb3JisEFQ0vxr2Y57GUNYh447C8xzwj89U/8fdW8LhProdxvnVH6U8M2Y73QKiTIH+LWbK3V2BBZsAg=="],
 

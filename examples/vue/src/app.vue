@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { OTPInput } from "@shipwright-sh/package-vue";
+import { OTPInput } from "@shipwright-sh/input-otp-vue";
 
 function cn(...classes: (string | boolean | undefined)[]) {
 	return classes.filter(Boolean).join(" ");
