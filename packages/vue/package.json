@@ -1,6 +1,6 @@
 {
 	"name": "@shipwright-sh/input-otp-vue",
-	"description": "Vue port of the Input OTP component",
+	"description": "Input OTP component",
 	"keywords": [
 		"vue",
 		"input",

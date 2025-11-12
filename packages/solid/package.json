@@ -1,7 +1,7 @@
 {
 	"name": "@shipwright-sh/input-otp-solid",
 	"version": "0.1.2",
-	"description": "Solid port of the Input OTP component",
+	"description": "Input OTP component",
 	"keywords": [
 		"solid",
 		"input",
