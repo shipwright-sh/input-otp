@@ -17,5 +17,7 @@
 			"import": "./dist/index.mjs",
 			"types": "./dist/index.d.mts"
 		}
-	}
+	},
+	"description": "Input OTP component",
+	"website": "https://www.shipwright.sh"
 }

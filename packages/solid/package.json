@@ -37,5 +37,6 @@
 			"import": "./dist/index.js",
 			"types": "./dist/index.d.ts"
 		}
-	}
+	},
+	"website": "https://www.shipwright.sh"
 }
